@@ -1,0 +1,13 @@
+[Unit]
+Description=custom dns dnshield
+After=network.target
+Wants=network-online.target
+
+[Service]
+Restart=always
+Type=simple
+ExecStart=/usr/bin/dnshield -conf /etc/dnshield-conf.json
+Environment=''
+
+[Install]
+WantedBy=multi-user.target 

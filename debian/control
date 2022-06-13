@@ -1,0 +1,10 @@
+Package: dnshield
+Version: ${version}
+Section: net
+Priority: standard
+Architecture: ${arch}
+Essential: no
+Installed-Size: ${install_size}
+Maintainer: linuxconfig.org
+Description: DNS proxy blocking unwanted domains
+Depends: systemctl
