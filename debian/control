@@ -7,4 +7,4 @@ Essential: no
 Installed-Size: ${install_size}
 Maintainer: Corentin-Luc-Artaud
 Description: DNS proxy blocking unwanted domains
-Depends: systemctl
+Depends: systemd

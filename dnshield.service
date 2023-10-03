@@ -6,8 +6,9 @@ Wants=network-online.target
 [Service]
 Restart=always
 Type=simple
+Environment="GOGC=50"
+Environment="GOMEMLIMIT=2MiB"
 ExecStart=/usr/bin/dnshield -conf /etc/dnshield-conf.json
-Environment=''
 
 [Install]
 WantedBy=multi-user.target 

@@ -1,0 +1,5 @@
+systemctl stop dnshield
+systemctl disable dnshield
+systemctl daemon-reload
+
+rm -f /etc/dnshield-conf.json
